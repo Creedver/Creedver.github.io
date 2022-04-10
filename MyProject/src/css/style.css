@@ -61,11 +61,12 @@ nav{
     padding: 0px 16px;
     margin: 60px 28px 0px 14px;
 }
+
 .main1{
     text-align: center;
     width: 100%;
     height: 618px;
-    background: url(../img/krug4el.png) 50% 30% no-repeat;
+    background: url(../img/krug4el.png) 50% 30% no-repeat, url(../img/Palka.png) 50% 10%/8% auto no-repeat;
 }
 .main1 h2{
     margin-top: 80px;
@@ -93,10 +94,11 @@ nav{
     padding: 7px 10px 10px 32px;
     margin-top: 30px;
 }
+
 .main2{
     height: 520px;
     width: 100%;
-    background: url(../img/FONIT.jpg)no-repeat;
+    background: url(../img/nout.png) 16% 52%/ 3.5% auto no-repeat, url(../img/Znak.png)40% 52%/ 3.5% auto no-repeat, url(../img/Raketa.png) 64% 52%/ 3.5% auto no-repeat, url(../img/Gfon.png)88.5% 52%/3.5% auto no-repeat ,url(../img/Palka.png) 50% 27%/8% auto no-repeat, url(../img/FONIT.jpg)no-repeat;
 }
 
 .main2 h2{
@@ -125,7 +127,7 @@ nav{
     color: #3f495a;
     width: 100%;
     height: 800px;
-    background: url(../img/Fotka.jpg) 50% 45%/800px auto no-repeat;
+    background: url(../img/Palka.png) 50% 14%/5% auto no-repeat, url(../img/Fotka.jpg) 50% 45%/800px auto no-repeat;
 }
 
 .main3 h2{
@@ -178,6 +180,7 @@ nav{
 }
 
 .main4{
+    background: url(../img/ItLine.jpg) 52% 80%/49% auto no-repeat;
     width: 100%;
     height: 750px;
 }
@@ -196,6 +199,7 @@ nav{
     color: #1c2534;
     margin-left: 420px;
 }
+
 .opt2{
     padding: 20px 500px 1px 10px;
     color: #737373;
@@ -224,7 +228,7 @@ nav{
     line-height: 5px;
     margin-top: 15px;
 
-    word-spacing: 677px;
+    word-spacing: 720px;
 }
 
 
@@ -244,12 +248,21 @@ nav{
     font-size:15px;
     font-weight: bold;
 }
+.main4 span{
+    color: #1c2534;
+        font-weight: bold;
+    font-size: 15px;
+    margin-left: 420px;
+    line-height: 5px;
+    margin-top: 15px;
+    word-spacing: 685px;
+}
 
 .main5{
     
     text-align: center;
     height: 500px;
-    background: url(../img/fon2.jpg) no-repeat;
+    background: url(../img/smile.png) 14.7% 60%/ 4% auto no-repeat, url(../img/skobki.png) 39.4% 60%/ 4% auto no-repeat, url(../img/Gall04ka.png)63.5% 60%/4% auto no-repeat, url(../img/Kubok.png)89.1% 60%/4% auto no-repeat ,url(../img/Palka.png) 50% 31%/15% 7px no-repeat, url(../img/fon2.jpg) no-repeat;
 }
 
 .main5 h2{
@@ -270,8 +283,8 @@ nav{
 }
 
 .main6{
-    background: url(../img/gaz.png) 50% 40%/ 110px auto no-repeat;
-    height: 470px;
+    background: url(../img/okop.png) 55% 100%/ 0.7% auto no-repeat, url(../img/okop.png) 50% 100%/ 0.7% auto no-repeat, url(../img/oknopka.png) 45% 100%/ 0.7% auto no-repeat, url(../img/Palka.png)50% 17%/ 6% auto no-repeat, url(../img/gaz.png) 50% 40%/ 110px auto no-repeat;
+    height: 500px;
     text-align: center;
     margin-bottom: 100px;
 }
@@ -298,8 +311,8 @@ nav{
     color: #fff;
     text-align: center;
     width: 100%;
-    height: 777px;
-    background: url(../img/lastfn.jpg) 100% 100%/100% 95% no-repeat;
+    height: 707px;
+    background: url(../img/truba.png) 76% 45%/ 1.5% auto no-repeat, url(../img/konvert.png) 49.8% 45%/ 2.2% auto no-repeat, url(../img/geo.png) 23% 44%/ 1.5% auto no-repeat, url(../img/Palka.png) 50% 19%/ 8% 6px no-repeat, url(../img/lastfn.jpg) 100% 100%/100% 95% no-repeat;
 }
 .main7 h2{
     padding-top: 80px;
@@ -315,7 +328,14 @@ nav{
     margin: 130px 0px 0px 290px;
 }
 .main7 form{
-    margin-top: 200px
+    margin-top: 20px;
+}
+
+.main7 h6{
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 170px;
 }
 .text89{
     text-indent: 5px;
