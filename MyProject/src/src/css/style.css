@@ -251,12 +251,16 @@ main {
     font-size: 12px;
     padding: 7px 10px 10px 32px;
     margin-top: 30px;
-    transition: all 2s ease 0s;
+    transition: all 0.3s ease 0s;
     transform: scale(1);
 }
 
 .main1 input:hover {
     transform: scale(1.1);
+}
+
+.main1 input:active{
+    transform: scale(1);
 }
 
 .main2 {
@@ -570,6 +574,14 @@ main {
     margin-top: 170px;
 }
 
+.main7 a:hover {
+    transform: scale(1.2);
+}
+
+.main7 a:active {
+    transform: scale(1);
+}
+
 .text89 {
     text-indent: 5px;
     width: 300px;
@@ -594,14 +606,20 @@ main {
     border-radius: 5px;
     border: 2px solid #fff;
     transition: all;
-}
-
-.nanah:hover {
     display: inline-block;
     animation: tada infinite;
     /* referring directly to the animation's @keyframe declaration */
     animation-duration: 2s;
     /* don't forget to set a duration! */
+}
+
+.nanah:hover {
+    animation: alternate;
+    transform: scale(1.1);
+}
+
+.nanah:active{
+    transform: scale(0.9);
 }
 
 .Karta {
