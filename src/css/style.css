@@ -59,7 +59,7 @@ main{
 .title_container h4{
     color: #76828e;
     margin: 50px 0px;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .title_container h1{
@@ -67,5 +67,30 @@ main{
     font-size: 50px;
     color: #223549;
     font-weight: bold;
+}
+.title_container input{
+    
+}
+
+.main1{
+    background: url(../img/Palka.png) 50% 10%/7% auto no-repeat,url(../img/krug4el.png) 50% 27%/auto no-repeat;
+    text-align: center;
+    height: 630px;
+}
+
+.main1 h2{ 
+    font-weight: bold;
+    font-size: 35px;
+    color: #1a2e43;
+    margin: 50px 0px 323px 0px;
+}
+
+.title_container1 p{
+    font-size: 15px;
+    color: #38475a;
+}
+
+.title_container1 input{
+    margin-top: 40px;
 }
 
