@@ -25,8 +25,8 @@ nav {
     z-index: 1;
     font-weight: bold;
     position: fixed;
-    display: flex;
 }
+
 
 .logo {
     color: #fff;
@@ -37,11 +37,11 @@ nav {
 .row ul{
     font-size: 14px;
     line-height: 50px;
-    text-transform: uppercase;
     display: flex;
     justify-content: space-between;
 }
-.row a{
+.row a{ 
+    text-transform: uppercase;
     text-decoration: none;
     color: #fff;
 }
@@ -58,7 +58,7 @@ main{
 
 .title_container h4{
     color: #76828e;
-    margin: 50px 0px;
+    margin: 40px 0px;
     font-size: 18px;
 }
 
@@ -69,16 +69,25 @@ main{
     font-weight: bold;
 }
 .title_container input{
-    
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid #697784;
+    background: none;
+    border-radius: 5px;
+    color: #697784;
+    font-size: 13px;
+    padding: 0px 16px;
 }
 
 .main1{
     background: url(../img/Palka.png) 50% 10%/7% auto no-repeat,url(../img/krug4el.png) 50% 27%/auto no-repeat;
     text-align: center;
-    height: 630px;
+    height: 600px;
 }
 
 .main1 h2{ 
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 35px;
     color: #1a2e43;
@@ -91,6 +100,237 @@ main{
 }
 
 .title_container1 input{
-    margin-top: 40px;
+    margin-top: 10px;
+    height: 30px;
+    width: 155px;
+    text-align: center;
+    padding-left: 30px;
+    border: 2px solid #6f707e;
+    border-radius: 5px;
+    color: #6f707e;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: #fff;
+    background: url(../img/ska4.png) 11% center no-repeat;
 }
+
+.main2 {
+    height: 520px;
+    background: url(../img/Palka.png) 50% 31%/ 5% auto no-repeat, url(../img/FONIT.jpg)100% 100%/ 100% auto no-repeat; 
+}
+
+.title_container2 h2{
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #1a2e43;
+    font-weight: bold;
+    text-align: center;
+    padding: 70px 0px 175px 0px;
+}
+
+
+.main2 h3{
+    color: #e87700;
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+}
+
+.main2 h3 p{
+    color: #38475a;
+    font-size: 13px;
+}
+
+.title_container3{
+    background: url(../img/Palka.png) 50% 44%/ 4% auto no-repeat;
+    height: 220px;
+    text-align: center;
+}
+
+.title_container3 h2{
+    padding: 50px 0px 60px 0px;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: bold;
+    color: #2f4154;
+}
+
+.title_container3 p{
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    color: #38475a;
+}
+.main3 h3{
+    padding-top: 40px;
+    font-size: 20px;
+}
+.main3 h3 p{
+    color: #38475a;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 23px;
+}
+
+.btn-lg{
+    width: 192px;
+    margin-bottom: 50px;
+}
+
+.title_container4{
+    height: 750px;
+    box-shadow: 1px 4px 15px #000 ;
+}
+
+.main4 h2{
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #1a2e43;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px 0px 60px 0px;
+}
+
+.opt2{
+    margin: 10px 0px 23px 0px;
+    color: #737373;
+    font-size: 15px;
+    font-weight: 500;
+    height: 50px;
+    padding-left: 22px;
+    background-color:gainsboro;
+}
+
+.main4 h4{
+    margin-top: 30px;
+}
+
+.main5{
+    color: #293b4f;
+    font-weight: bold;
+    margin-top: 70px;
+    height: 500px;
+    background: url(../img/Palka.png)50% 32%/5% auto no-repeat, url(../img/fon2.jpg) no-repeat;
+}
+
+.main5 h2{
+    text-transform: uppercase;
+    font-size: 28px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.row1{
+    font-size: 20px;
+}
+
+.row1 ul{
+    text-transform: uppercase;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 48px;
+}
+
+.row1 li p{
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.main6{
+    color: #172c41;
+    height: 590px;
+    text-align: center;
+}
+
+.main6 h2{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 38px;
+    padding: 70px 0px 26px 0px;
+}
+
+
+.main6 h3{
+    font-size: 17px;
+}
+
+.main7{
+    font-size: 17px;
+    text-align: center;
+    color: white;
+    height: 805px;
+    background: url(../img/Palka.png)50% 20%/4% auto no-repeat, url(../img/lastfn.jpg) no-repeat;
+}
+.main7 h2{
+    text-transform: uppercase;
+    padding-top: 100px;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.main7 p{
+    margin: 60px 0px 50px 0px;
+}
+
+
+.main7 h6{
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.piwi{
+    margin-top: 30px;
+}
+
+.text89{
+    padding-left: 10px;
+    width: 362px;
+    height: 34px;
+    color: #5d5d5e;
+    background-color:#cfd6dc;
+    box-shadow: 1px 4px 15px #000 ;
+    font-weight: 13px;
+    
+}
+
+.text33{
+    padding: 10px 0px 63px 10px;
+    width: 729px;
+    height: 93px;
+    color: #5d5d5e;
+    background-color:#cfd6dc;
+    box-shadow: 1px 4px 15px #000 ;
+    font-weight: 13px;
+}
+
+.nanah{
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+    background: none;
+    margin-top: 4px;
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
