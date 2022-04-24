@@ -1,17 +1,3 @@
-@font-face {
-    font-family: 'Franklin Gothic';
-    src: url('../fonts/FranklinGothic-Medium.eot');
-    src: url('../fonts/FranklinGothic-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/FranklinGothic-Medium.woff2') format('woff2'),
-        url('../fonts/FranklinGothic-Medium.woff') format('woff'),
-        url('../fonts/FranklinGothic-Medium.ttf') format('truetype'),
-        url('../fonts/FranklinGothic-Medium.svg#FranklinGothic-Medium') format('svg');
-    font-weight: 500;
-    font-style: normal;
-}
-
-
-
 body {
     font-family: Arial, sans-serif;
 }
@@ -32,619 +18,318 @@ body {
 }
 
 nav {
+    color: #fff;
     width: 100%;
     height: 50px;
-    background: #344051;
-    position: fixed;
+    background-color: #344051;
     z-index: 1;
+    font-weight: bold;
+    position: fixed;
 }
+
 
 .logo {
     color: #fff;
-    font-size: 34px;
+    font-size: 25px;
     line-height: 50px;
-    font-family: 'Franklin Gothic', sans-serif;
-    -webkit-animation: comming ease 3s;
-    -o-animation: comming ease 3s;
-    animation: comming ease 3s;
-    -webkit-animation-direction: alternate;
-    -o-animation-direction: alternate;
-    animation-direction: alternate;
-    animation-delay: 0.5s;
 }
 
-
-.menu{
-    float: left;
-}
-
-.menu li {
-    float: left;
-    line-height: 50px;
-    color: #fff;
+.row ul{
     font-size: 14px;
+    line-height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.row a{ 
     text-transform: uppercase;
-    -webkit-animation: topshift 0.4s ease forwards;
-    -o-animation: topshift 0.4s ease forwards;
-    animation: topshift 0.4s ease forwards;
-    opacity: 0;
-    font-family: 'Franklin Gothic', sans-serif;
-}
-
-.menu li a {
-    transition: all 0.1;
-    color: white;
-    transform: scale(1);
-    display: inline-block;
     text-decoration: none;
+    color: #fff;
 }
 
-.menu li a:visited {
-    color: white;
+main{
+    height: 1000px;
+    background: url(../img/4el.png) 90% 100% no-repeat,url(../img/fon.jpg) 100% 100%/ auto no-repeat;
 }
 
-.menu li a:hover {
-    color: orange;
-}
 
-.menu li a:active {
-    transform: scale(1.2);
-}
-
-.menu li:nth-child(2) {
-    animation-delay: 0.4s;
-}
-
-.menu li:nth-child(3) {
-    animation-delay: 0.8s;
-}
-
-.menu li:nth-child(4) {
-    animation-delay: 1.2s;
-}
-
-.menu li:nth-child(5) {
-    animation-delay: 1.6s;
-}
-
-.menu li:nth-child(6) {
-    animation-delay: 2s;
-}
-
-@keyframes titlemove {
-    from {
-        opacity: 0;
-        margin-left: -300px;
-    }
-
-    to {
-        opacity: 1;
-        margin-left: 204px;
-    }
-}
-
-.title_container {
-    margin-top: -500px;
-    color: #2c384a;
+.title_container{
     text-align: center;
-    opacity: 0;
-    -webkit-animation: titlemove 1.5s ease forwards;
-    -o-animation: titlemove 1.5s ease forwards;
-    animation: titlemove 1.5s ease forwards;
-    -webkit-animation-delay: 0.7s;
-    -o-animation-delay: 0.7s;
-    animation-delay: 0.7s;
 }
 
-.main4el {
-    margin-left: 790px;
-    margin-top: -340px;
-    position: absolute;
-    animation-duration: 1s;
-    animation-delay: 0.5s;
+.title_container h4{
+    color: #76828e;
+    margin: 40px 0px;
+    font-size: 18px;
 }
 
-.title_container h1 {
-    font-size: 60px;
+.title_container h1{
+    margin-top: 420px;
+    font-size: 50px;
+    color: #223549;
     font-weight: bold;
-    font-family: 'Franklin Gothic', sans-serif;
-    
 }
-
-.title_container h4 {
-    font-size: 22px;
-    color: #79818d;
-}
-
-.title_container input {
+.title_container input{
     width: 120px;
     height: 40px;
     text-align: center;
-    border: 2px solid #6d7682;
+    border: 2px solid #697784;
     background: none;
     border-radius: 5px;
-    color: #6d7682;
+    color: #697784;
     font-size: 13px;
     padding: 0px 16px;
-    
 }
 
-
-.title_container input {
-    transition: all 0.2s;
-    transform: scale(1);
-}
-
-.title_container input:hover {
-    background: #344051;
-    color: white;
-}
-
-.title_container input:active {
-    transform: scale(1.1);
-}
-
-@keyframes comming {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes topshift {
-    from {
-        opacity: 0;
-        
-    }
-
-    to {
-        opacity: 1;
-        
-    }
-}
-
-.main1 {
+.main1{
+    background: url(../img/Palka.png) 50% 10%/7% auto no-repeat,url(../img/krug4el.png) 50% 27%/auto no-repeat;
     text-align: center;
-    width: 100%;
-    height: 618px;
-    background: url(../img/Palka.png) 50% 10%/8% auto no-repeat;
+    height: 600px;
 }
 
-.box {
-    margin-left: 685px;
-    margin-top: 70px;
-    height: 210px;
-    width: 200px;
-    background: url(../img/krug4el.png) 100% 100% no-repeat;
-    transition: all 0.8s ease 0s;
-    transform-origin: right top;
-    transform: rotate(0deg);
-}
-
-.box:hover {
-    transform: rotate(-30deg);
-}
-
-.main1 h2 {
-    margin-top: 40px;
-    text-align: center;
-    font-size: 30px;
+.main1 h2{ 
+    text-transform: uppercase;
     font-weight: bold;
-    color: #263244;
+    font-size: 35px;
+    color: #1a2e43;
+    margin: 50px 0px 323px 0px;
 }
 
-.main1 p {
-    font-size: 16px;
-    line-height: normal;
-    text-align: center;
-    color: #3f495a;
+.title_container1 p{
+    font-size: 15px;
+    color: #38475a;
 }
 
-.main1 input {
+.title_container1 input{
+    margin-top: 10px;
     height: 30px;
+    width: 155px;
     text-align: center;
+    padding-left: 30px;
     border: 2px solid #6f707e;
-    background-size: 2px 3px;
-    background: url(../img/150265237314573381.jpg)left/ 30px auto no-repeat;
     border-radius: 5px;
     color: #6f707e;
-    font-size: 12px;
-    transition: all 0.3s ease 0s;
-    transform: scale(1);
-}
-
-.main1 input:hover {
-    transform: scale(1.1);
-}
-
-.main1 input:active{
-    transform: scale(1);
+    font-size: 13px;
+    font-weight: 500;
+    background-color: #fff;
+    background: url(../img/ska4.png) 11% center no-repeat;
 }
 
 .main2 {
-    height: 520px;
-    width: 100%;
-    background: url(../img/nout.png) 16% 52%/ 3.5% auto no-repeat, url(../img/Znak.png)40% 52%/ 3.5% auto no-repeat, url(../img/Raketa.png) 64% 52%/ 3.5% auto no-repeat, url(../img/Gfon.png)88.5% 52%/3.5% auto no-repeat, url(../img/Palka.png) 50% 27%/8% auto no-repeat, url(../img/FONIT.jpg)no-repeat;
+    background: url(../img/Palka.png) 50% 31%/ 5% auto no-repeat, url(../img/FONIT.jpg)100% 100%/ 100% auto no-repeat; 
 }
 
-.main2 h2 {
-    padding-top: 80px;
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    color: #263244;
-}
-
-.main2 h3 {
-    margin-left: 170px;
-    margin-top: 210px;
-    float: left;
-    width: 200px;
-    text-align: center;
-    font-size: 15px;
-    font-weight: bold;
-    color: #cf7600;
-}
-
-.main2 p {
-    margin-top: 15px;
-    color: #3f495a;
-}
-
-.main3 {
-    color: #3f495a;
-    width: 100%;
-    height: 800px;
-    background: url(../img/Palka.png) 50% 14%/5% auto no-repeat, url(../img/Fotka.jpg) 50% 45%/800px auto no-repeat;
-}
-
-.main3 h2 {
-    padding-top: 60px;
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    color: #263244;
-}
-
-.title_container3 p {
-    font-weight: bold;
-    color: #3f495a;
-    text-align: center;
-    padding-top: 50px;
-}
-
-.main3 h3 {
-    margin-right: 100px;
-    font-size: 15px;
-    float: left;
-    letter-spacing: 2px;
-    font-weight: bold;
-    color: #384354;
-    padding: 460px 0px 0px 400px;
-    line-height: 15px;
-}
-
-
-.main3 a {
-    font-size: 14px;
-    background: #63b5ae;
-    text-align: center;
-    border-radius: 5px;
-    color: #fff;
-    padding: 13px 40px 13px 40px;
-    margin-top: 10px;
+.title_container2 h2{
     text-transform: uppercase;
-    -webkit-animation: topshift 0.4s ease forwards;
-    -o-animation: topshift 0.4s ease forwards;
-    animation: topshift 0.4s ease forwards;
-}
-
-.site {
-    transition: all 0.1;
-    color: white;
-    transform: scale(1);
-    display: inline-block;
-}
-
-.site:hover {
-    transform: scale(1.2);
-}
-
-.site:active {
-    transform: scale(1);
-}
-
-.main3 h4 {
-    font-size: 17px;
-    color: #384354;
+    font-size: 35px;
+    color: #1a2e43;
     font-weight: bold;
-    padding-top: 460px;
-    padding-right: 390px;
-    line-height: 18px;
+    text-align: center;
+    padding: 70px 0px 175px 0px;
 }
 
-.main3 p {
+
+.main2 h3{
+    color: #e87700;
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+}
+
+.main2 h3 p{
+    color: #38475a;
     font-size: 13px;
 }
 
-.main4 {
-    background: url(../img/ItLine.jpg) 52% 80%/49% auto no-repeat;
-    width: 100%;
-    height: 750px;
-}
-
-.main4 h2 {
+.title_container3{
+    background: url(../img/Palka.png) 50% 44%/ 4% auto no-repeat;
+    height: 220px;
     text-align: center;
-    color: #1c2534;
-    margin-top: 20px;
-    font-size: 30px;
-    font-weight: bold;
 }
 
-.main4 h3 {
+.title_container3 h2{
+    padding: 50px 0px 60px 0px;
+    text-transform: uppercase;
+    font-size: 35px;
     font-weight: bold;
-    font-size: 19px;
-    margin-top: 80px;
-    color: #1c2534;
-    margin-left: 420px;
+    color: #2f4154;
 }
 
-.opt2 {
-    padding: 20px 500px 1px 10px;
+.title_container3 p{
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    color: #38475a;
+}
+.main3 h3{
+    padding-top: 40px;
+    font-size: 20px;
+}
+.main3 h3 p{
+    color: #38475a;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 23px;
+}
+
+.btn-lg{
+    width: 192px;
+    margin-bottom: 50px;
+}
+
+.title_container4{
+    height: 750px;
+    box-shadow: 1px 4px 15px #000 ;
+}
+
+.main4 h2{
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #1a2e43;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px 0px 60px 0px;
+}
+
+.opt2{
+    margin: 10px 0px 23px 0px;
     color: #737373;
     font-size: 15px;
+    font-weight: 500;
+    height: 50px;
+    padding-left: 22px;
+    background-color:gainsboro;
+}
+
+.main4 h4{
+    margin-top: 30px;
+}
+
+.main5{
+    color: #293b4f;
     font-weight: bold;
-    height: 70px;
-    width: 777px;
-    background: url(../img/1.jpg)100% 100%/ 100% auto no-repeat;
-}
-
-.main4 p {
-    color: #1c2534;
-    font-weight: bold;
-    font-size: 15px;
-    margin-left: 420px;
-    line-height: 5px;
-    margin-top: 2px;
-    margin-bottom: 50px;
-
-}
-
-.main4 h4 {
-    color: #1c2534;
-    font-weight: bold;
-    font-size: 15px;
-    margin-left: 420px;
-    line-height: 5px;
-    margin-top: 15px;
-
-    word-spacing: 720px;
-}
-
-
-.main4 h5 {
-    color: #1c2534;
-    word-spacing: 655px;
-    margin-left: 420px;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.main4 h6 {
-    color: #1c2534;
-    word-spacing: 620px;
-    float: left;
-    margin-left: 420px;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.main4 span {
-    color: #1c2534;
-    font-weight: bold;
-    font-size: 15px;
-    margin-left: 420px;
-    line-height: 5px;
-    margin-top: 15px;
-    word-spacing: 685px;
-}
-
-.parallax {
-    background: url(../img/fon2.jpg) no-repeat;
-    background-attachment: fixed;
-}
-
-.main5 {
-    text-align: center;
-    height: 400px;
-    background: url(../img/Palka.png) 50% 31%/15% 7px no-repeat;
-}
-
-.stata {
-    display: inline-block;
-    margin: 1 1.5rem;
-    animation: flash infinite;
-    /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 5s;
-}
-
-.tula {
-    background: url(../img/smile.png) 15% 50%/ 4% auto no-repeat, url(../img/skobki.png) 40.7% 50%/ 4% auto no-repeat, url(../img/Gall04ka.png)65.7% 50%/4% auto no-repeat, url(../img/Kubok.png)91.8% 50%/4% auto no-repeat;
-    display: inline-block;
-    margin: 1 1.2rem;
-    animation: headShake infinite;
-    /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s;
-    /* don't forget to set a duration! */
-}
-
-.main5 h2 {
-    font-weight: bold;
-    padding-top: 27px;
-    color: #323e4f;
-    font-size: 30px;
-
-}
-
-.main5 h5 {
-    line-height: 20px;
-    color: #323e4f;
-    font-weight: bold;
-    line-height: 60px;
-    font-size: 35px;
-    float: left;
-    margin: 200px 0px 0px 60px;
-}
-
-.main6 {
-    background: url(../img/okop.png) 55% 100%/ 0.7% auto no-repeat, url(../img/okop.png) 50% 100%/ 0.7% auto no-repeat, url(../img/oknopka.png) 45% 100%/ 0.7% auto no-repeat, url(../img/Palka.png)50% 17%/ 6% auto no-repeat;
+    margin-top: 70px;
     height: 500px;
-    text-align: center;
-    margin-bottom: 100px;
-    transition: all;
+    background: url(../img/Palka.png)50% 32%/5% auto no-repeat, url(../img/fon2.jpg) no-repeat;
 }
 
-.scale3d {
-    margin-top: 100px;
-    margin-left: 740px;
-    width: 110px;
-    height: 110px;
-    background: url(../img/gaz.png) 100% 50%/ 110px 110px no-repeat;
-    transition: all 2s ease 0.2s;
-    transform: scale3D(1, 1, 1);
+.main5 h2{
+    text-transform: uppercase;
+    font-size: 28px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
 }
 
-.scale3d:hover {
-    transform: scale3d(1.5, 1.5, 2);
-}
-
-.main6 h2 {
-    color: #1c2534;
-    margin-top: 80px;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.main6 h4 {
-    font-weight: bold;
-    color: #243042;
-    margin: 80px 350px 0px 350px;
-}
-
-.main6 h3 {
+.row1{
     font-size: 20px;
-    margin-top: 80px;
-    color: #243042;
 }
 
-.main7 {
-    color: #fff;
-    text-align: center;
-    width: 100%;
-    height: 707px;
-    background: url(../img/truba.png) 76% 45%/ 1.5% auto no-repeat, url(../img/konvert.png) 49.8% 45%/ 2.2% auto no-repeat, url(../img/geo.png) 23% 44%/ 1.5% auto no-repeat, url(../img/Palka.png) 50% 19%/ 8% 6px no-repeat, url(../img/lastfn.jpg) 100% 100%/100% 95% no-repeat;
-}
-
-.main7 h2 {
-    padding-top: 80px;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.main7 p {
-    font-size: 18px;
+.row1 ul{
+    text-transform: uppercase;
     margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 48px;
 }
 
-.main7 h5 {
-    float: left;
-    margin: 130px 0px 0px 290px;
+.row1 li p{
+    font-weight: 600;
+    font-size: 28px;
 }
 
-.main7 form {
-    margin-top: 20px;
+.main6{
+    color: #172c41;
+    height: 590px;
+    text-align: center;
 }
 
-.main7 h6 {
+.main6 h2{
     font-weight: bold;
-    font-size: 20px;
-    color: #fff;
-    margin-top: 170px;
+    text-transform: uppercase;
+    font-size: 38px;
+    padding: 70px 0px 26px 0px;
 }
 
-.main7 a:hover {
-    transform: scale(1.2);
+
+.main6 h3{
+    font-size: 17px;
 }
 
-.main7 a:active {
-    transform: scale(1);
+.main7{
+    font-size: 17px;
+    text-align: center;
+    color: white;
+    height: 805px;
+    background: url(../img/Palka.png)50% 20%/4% auto no-repeat, url(../img/lastfn.jpg) no-repeat;
+}
+.main7 h2{
+    text-transform: uppercase;
+    padding-top: 100px;
+    font-weight: bold;
+    font-size: 28px;
 }
 
-.text89 {
-    text-indent: 5px;
-    width: 300px;
-    height: 30px;
+.main7 p{
+    margin: 60px 0px 50px 0px;
 }
 
-.text33 {
-    margin-top: 10px;
-    height: 100px;
-    padding: 5px 0px 0px 5px;
-    width: 400px;
+
+.main7 h6{
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
-.nanah {
+.piwi{
+    margin-top: 30px;
+}
+
+.text89{
+    padding-left: 10px;
+    width: 362px;
+    height: 34px;
+    color: #5d5d5e;
+    background-color:#cfd6dc;
+    box-shadow: 1px 4px 15px #000 ;
+    font-weight: 13px;
+    
+}
+
+.text33{
+    padding: 10px 0px 63px 10px;
+    width: 729px;
+    height: 93px;
+    color: #5d5d5e;
+    background-color:#cfd6dc;
+    box-shadow: 1px 4px 15px #000 ;
+    font-weight: 13px;
+}
+
+.nanah{
     font-size: 13px;
+    color: white;
     font-weight: bold;
-    color: #fff;
     background: none;
     margin-top: 4px;
-    height: 30px;
-    width: 90px;
+    height: 40px;
+    width: 120px;
     border-radius: 5px;
     border: 2px solid #fff;
-    transition: all;
-    display: inline-block;
-    animation: tada infinite;
-    /* referring directly to the animation's @keyframe declaration */
-    animation-duration: 2s;
-    /* don't forget to set a duration! */
 }
 
-.nanah:hover {
-    animation: alternate;
-    transform: scale(1.1);
-}
 
-.nanah:active{
-    transform: scale(0.9);
-}
 
-.Karta {
-    height: 250px;
-    background: url(../img/Karta.jpg) 100% 100%/ 100% 100% no-repeat;
-}
 
-.Karta h2 {
-    background: #fff;
-    height: 20px;
-    width: 80px;
-    border: 1px solid #000;
-}
 
-.bb {
-    padding-top: 17px;
-    color: #fff;
-    text-align: center;
-    margin-top: -5px;
-    height: 45px;
-    width: 100%;
-    background: #354051;
-}
 
-.white-btn:visited{
-    color: white;
-}
+
+
+
+
+
+
+
+
+
+
