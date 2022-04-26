@@ -25,8 +25,7 @@ nav {
     z-index: 1;
     font-weight: bold;
     position: fixed;
-}
-
+} 
 
 .logo {
     color: #fff;
@@ -63,7 +62,7 @@ main{
 }
 
 .title_container h1{
-    margin-top: 420px;
+    margin-top: 400px;
     font-size: 50px;
     color: #223549;
     font-weight: bold;
@@ -80,8 +79,9 @@ main{
     padding: 0px 16px;
 }
 
+
 .main1{
-    background: url(../img/Palka.png) 50% 10%/7% auto no-repeat,url(../img/krug4el.png) 50% 27%/auto no-repeat;
+    background: url(../img/Palka.png) 50% 10%/7% auto no-repeat;
     text-align: center;
     height: 600px;
 }
@@ -91,7 +91,7 @@ main{
     font-weight: bold;
     font-size: 35px;
     color: #1a2e43;
-    margin: 50px 0px 323px 0px;
+    margin: 0px 0px 70px 0px;
 }
 
 .title_container1 p{
@@ -115,8 +115,8 @@ main{
 }
 
 .main2 {
-    height: 520px;
-    background: url(../img/Palka.png) 50% 31%/ 5% auto no-repeat, url(../img/FONIT.jpg)100% 100%/ 100% auto no-repeat; 
+    height: 300px;
+    background: url(../img/Palka.png) 50% 31%/ 5% auto no-repeat, url(../img/FONIT.jpg)100% 100%/ 100% auto no-repeat;
 }
 
 .title_container2 h2{
@@ -125,15 +125,18 @@ main{
     color: #1a2e43;
     font-weight: bold;
     text-align: center;
-    padding: 70px 0px 175px 0px;
+    padding: 30px 0px 5px 0px;
 }
 
 
 .main2 h3{
+    padding-top: 50px;
     color: #e87700;
     font-weight: bold;
     font-size: 17px;
     text-align: center;
+    justify-content: space-between;
+    
 }
 
 .main2 h3 p{
@@ -143,12 +146,12 @@ main{
 
 .title_container3{
     background: url(../img/Palka.png) 50% 44%/ 4% auto no-repeat;
-    height: 220px;
+    
     text-align: center;
 }
 
 .title_container3 h2{
-    padding: 50px 0px 60px 0px;
+    padding: 20px 0px 60px 0px;
     text-transform: uppercase;
     font-size: 35px;
     font-weight: bold;
@@ -205,13 +208,7 @@ main{
     margin-top: 30px;
 }
 
-.main5{
-    color: #293b4f;
-    font-weight: bold;
-    margin-top: 70px;
-    height: 500px;
-    background: url(../img/Palka.png)50% 32%/5% auto no-repeat, url(../img/fon2.jpg) no-repeat;
-}
+
 
 .main5 h2{
     text-transform: uppercase;
@@ -258,15 +255,14 @@ main{
 }
 
 .main7{
+    color: white;
     font-size: 17px;
     text-align: center;
-    color: white;
-    height: 805px;
     background: url(../img/Palka.png)50% 20%/4% auto no-repeat, url(../img/lastfn.jpg) no-repeat;
 }
 .main7 h2{
     text-transform: uppercase;
-    padding-top: 100px;
+    padding-top: 70px;
     font-weight: bold;
     font-size: 28px;
 }
@@ -305,6 +301,7 @@ main{
     background-color:#cfd6dc;
     box-shadow: 1px 4px 15px #000 ;
     font-weight: 13px;
+    max-width: 100%;
 }
 
 .nanah{
@@ -317,7 +314,104 @@ main{
     width: 120px;
     border-radius: 5px;
     border: 2px solid #fff;
+    
 }
+
+@media (min-width: 400px) and (max-width: 1000px){
+    .title_container h1{
+        display: none;
+    }
+    
+    .title_container h4{
+        margin: 430px 100px 0px 0px;
+        display: flex;
+        justify-content: center;
+    }
+    .b1{
+        margin-top: 10px;
+        margin-right: 100px;
+    }
+}
+@media (min-width: 1000px) and (max-width: 1200px){
+    .title_container h1{
+        margin-top:200px;
+    }
+}
+@media (min-width: 400px) and (max-width: 1200px){
+    
+    .main1{
+        height: 400px;
+    }
+    
+    .mainB{
+        padding-top: 10px;
+        text-align: end;
+    }
+    
+    .title_container1 h2{
+        margin-top: 10px;
+    }
+    
+    .title_container1 p{
+        display: none;
+    }
+    
+    .title_container2 h2{
+        padding-bottom: 30px;
+    }
+    
+    .title_container2 h3{
+        padding-top: 0px;
+    }
+    
+    .main5 h2{
+        margin-bottom: 0px;
+    }
+    
+    .main6 h2{
+        padding-top: 0px;
+    }
+    
+}
+
+.content__matrixMain{
+    transform: matrix(1.2, 0, 0, 1.2, 0 ,0);
+}
+
+.content__matrixMain:active{
+    transform: matrix(0.9, 0, 0, 0.9, 0, 0);
+}
+
+.content__matrix{
+    transform: matrix(1, 0, 0, 1, 0 ,0);
+}
+
+.content__matrix:active{
+    transform: matrix(0.8, 0, 0, 0.8, 0, 0);
+}
+
+.content__transform-origin{
+    transform-origin: top;
+    transform: rotate(0deg);
+    transition-duration: 1s;
+}
+
+.content__transform-origin:hover{
+    transform: rotate(-30deg);
+    transition-duration: 1s;
+    color: white;
+}
+
+.ska{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+    
+    
+
 
 
 
