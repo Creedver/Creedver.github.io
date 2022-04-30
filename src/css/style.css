@@ -1,5 +1,53 @@
-body {
-    font-family: Arial, sans-serif;
+@font-face {
+    font-family: 'Franklin Gothic';
+    src: url('../fonts/FranklinGothic-Medium.eot');
+    src: url('../fonts/FranklinGothic-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FranklinGothic-Medium.woff2') format('woff2'),
+        url('../fonts/FranklinGothic-Medium.woff') format('woff'),
+        url('../fonts/FranklinGothic-Medium.ttf') format('truetype'),
+        url('../fonts/FranklinGothic-Medium.svg#FranklinGothic-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('../fonts/Calibri.eot');
+    src: url('../fonts/Calibri.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Calibri.woff2') format('woff2'),
+        url('../fonts/Calibri.woff') format('woff'),
+        url('../fonts/Calibri.ttf') format('truetype'),
+        url('../fonts/Calibri.svg#Calibri') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url('../fonts/Bahnschrift.eot');
+    src: url('../fonts/Bahnschrift.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Bahnschrift.woff2') format('woff2'),
+        url('../fonts/Bahnschrift.woff') format('woff'),
+        url('../fonts/Bahnschrift.ttf') format('truetype'),
+        url('../fonts/Bahnschrift.svg#Bahnschrift') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Impact';
+    src: url('../fonts/Impact.eot');
+    src: url('../fonts/Impact.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Impact.woff2') format('woff2'),
+        url('../fonts/Impact.woff') format('woff'),
+        url('../fonts/Impact.ttf') format('truetype'),
+        url('../fonts/Impact.svg#Impact') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    max-width: 100%;
 }
 
 .loader {
@@ -22,8 +70,8 @@ nav {
     width: 100%;
     height: 50px;
     background-color: #344051;
-    z-index: 1;
     font-weight: bold;
+    z-index: 1;
     position: fixed;
 } 
 
@@ -39,6 +87,7 @@ nav {
     display: flex;
     justify-content: space-between;
 }
+
 .row a{ 
     text-transform: uppercase;
     text-decoration: none;
@@ -50,10 +99,71 @@ main{
     background: url(../img/4el.png) 90% 100% no-repeat,url(../img/fon.jpg) 100% 100%/ auto no-repeat;
 }
 
+.menu li{
+    -webkit-animation: topshift 0.4s ease forwards;
+    -o-animation: topshift 0.4s ease forwards;
+    animation: topshift 0.4s ease forwards;
+    opacity: 0;
+    transition: all 0.1;
+}
+
+@keyframes topshift {
+    from {
+        opacity: 0;
+        margin-top: -80px;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+.menu li:nth-child(1) {
+    animation-delay: 0.4s;
+}
+
+.menu li:nth-child(2) {
+    animation-delay: 0.8s;
+}
+
+.menu li:nth-child(3) {
+    animation-delay: 1.2s;
+}
+
+.menu li:nth-child(4) {
+    animation-delay: 1.6s;
+}
+
+.menu li:nth-child(5) {
+    animation-delay: 2s;
+}
+
+.menu li:nth-child(6) {
+    animation-delay: 2.2s;
+}
 
 .title_container{
     text-align: center;
+    -webkit-animation: topshift1 3s ease forwards;
+    -o-animation: topshift 3s ease forwards;
+    animation: topshift 3s ease forwards;
+    opacity: 0;
+    transition: all 0.1;
 }
+
+@keyframes topshift1 {
+    from {
+        opacity: 0;
+        margin-top: -500px;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+
 
 .title_container h4{
     color: #76828e;
@@ -79,7 +189,6 @@ main{
     padding: 0px 16px;
 }
 
-
 .main1{
     background: url(../img/Palka.png) 50% 10%/7% auto no-repeat;
     text-align: center;
@@ -95,8 +204,10 @@ main{
 }
 
 .title_container1 p{
+    padding-top: 20px;
     font-size: 15px;
     color: #38475a;
+    font-family: 'Calibri', sans-serif;
 }
 
 .title_container1 input{
@@ -115,7 +226,7 @@ main{
 }
 
 .main2 {
-    height: 300px;
+    height: 320px;
     background: url(../img/Palka.png) 50% 31%/ 5% auto no-repeat, url(../img/FONIT.jpg)100% 100%/ 100% auto no-repeat;
 }
 
@@ -130,24 +241,26 @@ main{
 
 
 .main2 h3{
-    padding-top: 50px;
+    padding-top: 60px;
     color: #e87700;
     font-weight: bold;
     font-size: 17px;
     text-align: center;
     justify-content: space-between;
+    font-family: 'Bahnschrift', sans-serif;
     
 }
 
 .main2 h3 p{
     color: #38475a;
-    font-size: 13px;
+    font-size: 15px;
+    font-family: 'Calibri', sans-serif;
 }
 
 .title_container3{
     background: url(../img/Palka.png) 50% 44%/ 4% auto no-repeat;
-    
     text-align: center;
+    font-family: 'Franlin Gothic', sans-serif;
 }
 
 .title_container3 h2{
@@ -167,11 +280,18 @@ main{
 .main3 h3{
     padding-top: 40px;
     font-size: 20px;
+    font-weight: bold;
+    color: #2f4154;
+}
+
+.main3 p{
+    font-family: 'Calibri', sans-serif;
 }
 .main3 h3 p{
+    margin-top: 1px;
     color: #38475a;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 17px;
     line-height: 23px;
 }
 
@@ -183,6 +303,36 @@ main{
 .title_container4{
     height: 750px;
     box-shadow: 1px 4px 15px #000 ;
+    font-family: 'Franlin Gothic', sans-serif;
+}
+
+img.eblo {
+  animation: 10s linear 0s normal none infinite running eblo;
+  -webkit-animation: 10s linear 0s normal none infinite running eblo;
+}
+
+@keyframes eblo {
+  0% {
+    transform: rotate(0deg);
+  }
+    50%{
+        transform: rotate(-180deg)
+    }
+  50% {
+    transform: rotate(180deg);
+  }
+    @-webkit-keyframes eblo {
+  0% {
+    transform: rotate(0deg);
+  }
+    50%{
+        transform: rotate(-180deg)
+    }
+  50% {
+    transform: rotate(180deg);
+  }
+}
+
 }
 
 .main4 h2{
@@ -204,36 +354,60 @@ main{
     background-color:gainsboro;
 }
 
-.main4 h4{
-    margin-top: 30px;
+.main4 h3{
+    font-weight: bold;
+    color: #1a2e43;
 }
 
+.main4 h4{
+    margin-top: 20px;
+    font-weight: bold;
+}
+.s44et{
+    color: #102032;
+    display: flex;
+    justify-content: space-between;
+}
 
+.main5{
+    margin-top: 20px;
+    height: 400px;
+    background: url(../img/Palka.png) 50% 31%/15% 7px no-repeat, url(../img/fon2.jpg) no-repeat;
+    color: #293b4f;
+}
 
 .main5 h2{
     text-transform: uppercase;
     font-size: 28px;
-    padding-top: 100px;
+    padding-top: 50px;
     display: flex;
     justify-content: center;
+    font-family: 'Franlin Gothic', sans-serif;
+    font-weight: bold;
 }
 
 .row1{
+    display: flex;
+    justify-content: space-between;
     font-size: 20px;
 }
 
 .row1 ul{
     text-transform: uppercase;
-    margin-top: 100px;
+    margin-top: 70px;
     display: flex;
     justify-content: space-between;
     text-align: center;
     font-size: 48px;
 }
 
+.row1 li{
+    font-family: 'Impact', sans-serif;
+}
+
 .row1 li p{
-    font-weight: 600;
     font-size: 28px;
+    font-family: 'Franlin Gothic', sans-serif;
 }
 
 .main6{
@@ -252,6 +426,13 @@ main{
 
 .main6 h3{
     font-size: 17px;
+    font-family: 'Calibri', sans-serif;
+    font-weight: bold;
+}
+
+.main6 h4{
+    font-family: 'Calibri', sans-serif;
+    font-weight: bold;
 }
 
 .main7{
@@ -268,14 +449,18 @@ main{
 }
 
 .main7 p{
+    font-family: 'Calibri', sans-serif;
     margin: 60px 0px 50px 0px;
+}
+
+.main7 ul{
+    font-family: 'Calibri', sans-serif;
 }
 
 
 .main7 h6{
     padding-top: 10px;
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 20px;
 }
 
 .piwi{
@@ -289,8 +474,7 @@ main{
     color: #5d5d5e;
     background-color:#cfd6dc;
     box-shadow: 1px 4px 15px #000 ;
-    font-weight: 13px;
-    
+    font-weight: 13px; 
 }
 
 .text33{
@@ -307,14 +491,13 @@ main{
 .nanah{
     font-size: 13px;
     color: white;
-    font-weight: bold;
     background: none;
     margin-top: 4px;
     height: 40px;
     width: 120px;
     border-radius: 5px;
     border: 2px solid #fff;
-    
+    font-family: 'Franklin Gothic', sans-serif;
 }
 
 @media (min-width: 400px) and (max-width: 1000px){
@@ -327,10 +510,7 @@ main{
         display: flex;
         justify-content: center;
     }
-    .b1{
-        margin-top: 10px;
-        margin-right: 100px;
-    }
+    
 }
 @media (min-width: 1000px) and (max-width: 1200px){
     .title_container h1{
@@ -357,7 +537,8 @@ main{
     }
     
     .title_container2 h2{
-        padding-bottom: 30px;
+        margin-top: 22px;
+        padding-bottom: 20px;
     }
     
     .title_container2 h3{
@@ -368,26 +549,31 @@ main{
         margin-bottom: 0px;
     }
     
+    
     .main6 h2{
         padding-top: 0px;
     }
     
 }
 
-.content__matrixMain{
-    transform: matrix(1.2, 0, 0, 1.2, 0 ,0);
+.content__matrix-Or4ek:hover{
+    transform: matrix(1.1, 0, 0, 1.1, 0 ,0);
 }
 
-.content__matrixMain:active{
-    transform: matrix(0.9, 0, 0, 0.9, 0, 0);
-}
-
-.content__matrix{
-    transform: matrix(1, 0, 0, 1, 0 ,0);
-}
-
-.content__matrix:active{
+.content__matrix-Or4ek:active{
     transform: matrix(0.8, 0, 0, 0.8, 0, 0);
+}
+
+.content__matrix-4ek:hover{
+    transform: matrix(1.1, 0, 0, 1.1, 0 ,0);
+}
+
+.content__matrix-4ek:active{
+    transform: matrix(0.8, 0, 0, 0.8, 0, 0);
+}
+
+.content_matrix-uvel:hover{
+    transform: matrix(1.3, 0, 0, 1.3, 0 ,0);
 }
 
 .content__transform-origin{
@@ -407,7 +593,20 @@ main{
     margin: 0px;
 }
 
-
+.str{
+/* Подключаем свойство transform-style для 3D */
+transform-style: preserve-3d;
+/* Подключаем анимацию для вращения и обзора */
+animation: main-rotate 10s infinite linear;
+}
+@keyframes main-rotate {
+    50% {
+transform: rotateY(-180deg);
+}
+50% {
+transform: rotateY(180deg);
+}
+}
 
     
     
