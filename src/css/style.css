@@ -612,6 +612,22 @@ transform: rotateY(180deg);
     color: red; 
 }
 
+.bg-primary{
+    position: fixed;
+}
+
+src{
+    opacity: 0;
+}
+
+data-src{
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+
+
+
     
     
 

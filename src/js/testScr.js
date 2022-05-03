@@ -1,34 +1,44 @@
-$(document).ready(function(){
- 
-    let options = {threshold : [0.5]}; //срабатывает когда пролистываем 0.5 блока
-    let observer = new IntersectionObserver(onEntry, options);
-    let elements = $('.element-animation'); //для всех элементов с классом element-animation сработает скрипт
-    elements.each((i, el)=>{
-        observer.observe(el);
-    }); //теперь нужна функция onEntry- наш обработчик-
+$(document).ready(function() {
+
+    $(window).scroll(() => {
+    let scrollDistance = $(window).scrollTop();
+
+    $(".section").each((i, el) => {
+        
+        if ($(el).offset().top - $("nav").outerHeight() <= scrollDistance) {
+          $("nav a").each((i, el) => {
+            if ($(el).hasClass("active")) {
+                $(el).removeClass("active");
+             }
+          }); 
+          $('nav li:eq(' + i + ')').find('a').addClass('active');
+        }
+    });
+});
     
+  let options = {threshold: [0.5]};
+    let observer = new IntersectionObserver (onEntry,options);
+    let elements = $('.element-animation');
+    elements.each((i,el) => {
+        observer.observe(el);
+    });  
+    $(document).ready(function() {
+  $('.image-link').magnificPopup({type:'image'});
+});
 });
 
-function onEntry(entry){ //доб-м ф-ю nEntry
-    entry.forEach(change => { //доб-м change
-        if (change.isIntersecting){ //проверим попал ли наш наблюдательный элемент IntersectionObserver и если да, то добавляем новый класс show-animation
-            change.target.add('show-animation');
+
+function onEntry(entry) {
+    entry.forEach(change =>{
+        if (change.isIntersecting){
+            change.target.src = change.target.dataset.src;
         }
     });
 }
 
-/**$(window).scroll())=> {
-    let scrollDistance = $(window).scrollTop();
-    
-    $(".section").each((i, el) =>{
-        if($(el).offset().top) - $("nav").outerHeight() <= scrollDistance) {
-            $("nav a").each(e, el) => {
-                if ($(el).hasClass("active")){
-                    $(el).removeClass("active");
-                }
-            });
-            $('nav li:eq('+ i +')').find('a').addClass('active');
-        }
-    });
+
+$('a[href^="#"]').click(function () {
+    let valHref = $(this).attr("href");
+    $('html, body').animate({scrollTop: $(valHref).offset().top - 50 + "px"});
 });
 

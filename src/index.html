@@ -12,48 +12,43 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     
 </head>
 
 <body>
     <header>
-        <nav>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xxl-2 col-xl-3 col-lg-3 col-7">
-                        <div id="hello" class="logo">Андрей Браун</div>
-                    </div>
-                    <div class="menu col-xxl-6 col-xl-6 col-lg-7 offset-xxl-2 offset-xl-1 offset-lg-0 d-none d-lg-block">
-                        <ul class="elem">
-                            <li class="content__matrix-Or4ek"><a href="#Home" style="color: #fff">Обо мне</a></li>
-                            <li class="content__matrix-Or4ek"><a href="#Mogu" style="color: #fff">Услуги</a></li>
-                            <li class="content__matrix-Or4ek"><a href="#Keis" style="color: #fff">Кейсы</a></li>
-                            <li class="content__matrix-Or4ek"><a href="#S4et" style="color: #fff">Прайс</a></li>
-                            <li class="content__matrix-Or4ek"><a href="#Stat" style="color: #fff">Отзывы</a></li>
-                            <li class="content__matrix-Or4ek"><a href="#Pismo" style="color: #fff">Контакты</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="mainB col-5 d-block d-lg-none">
-                        <div class="dropdown">
-                            <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Навигация</a>
-
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <li><a class="dropdown-item" href="#Home">Обо мне</a></li>
-                                <li><a class="dropdown-item" href="#Mogu">Услуги</a></li>
-                                <li><a class="dropdown-item" href="#Keis">Кейсы</a></li>
-                                <li><a class="dropdown-item" href="#S4et">Прайсы</a></li>
-                                <li><a class="dropdown-item" href="#Stat">Отзывы</a></li>
-                                <li><a class="dropdown-item" href="#Pismo">Контакты</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-        </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#exampleModal"  data-bs-toggle="modal">Андрей Браун</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#Home">Обо мне</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Mogu">Услуги</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Keis">Кейсы</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#S4et">Прайс</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Stat">Отзывы</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Pismo">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
     </header>
     <main>
 
@@ -72,13 +67,38 @@
     </main>
     <section class="section" id="Home">
     <div class="main1 col-xxl-8 offset-xxl-2 col-8 offset-2">
+       
         <div class="title_container1">
             <h2>Обо мне</h2>
-            <div class="ska"><img class="content__transform-origin" src="img/krug4el.png" alt=""></div>
-            <p class="element-animation">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto repellat atque accusamus, ratione autem fugit ea earum corporis soluta et! Earum nihil suscipit distinctio pariatur vero molestias laudantium culpa. <br><br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, quia quaerat reiciendis aut ipsa architecto enim mollitia consequuntur repellat! Minus eligendi veniam nisi laborum aliquam nesciunt iure totam eius enim inventore vitae et aperiam, eum eos rem ea? Officia, dignissimos.</p>
+            <div class="ska"><img class="content__transform-origin element-animation" src="img/nout.png" data-src="img/krug4el.png" alt=""></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto repellat atque accusamus, ratione autem fugit ea earum corporis soluta et! Earum nihil suscipit distinctio pariatur vero molestias laudantium culpa. <br><br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, quia quaerat reiciendis aut ipsa architecto enim mollitia consequuntur repellat! Minus eligendi veniam nisi laborum aliquam nesciunt iure totam eius enim inventore vitae et aperiam, eum eos rem ea? Officia, dignissimos.</p>
             <input type="button" class="content__matrix-4ek" value="Скачать резюме">
         </div>
-    </div></section>
+    </div>
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Покупай-продавай!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, tenetur.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">Подсчитать</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </section>
     <section class="section" id="Mogu">
     <div class="main2">
 
@@ -90,25 +110,25 @@
                 <div class="row">
                     <h2>Что я умею</h2>
                     <div class="col-xxl-2 col-xl-2 col-lg-2 offset-xxl-1 offset-xl-1 offset-lg-2 col-2 offset-1">
-                        <h3> <img src="img/nout.png" alt=""> <br> <br>Веб-дизайн
+                        <h3> <img class="element-animation" src="img/nout.png" data-src="img/nout.png" alt=""> <br> <br>Веб-дизайн
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, magni, unde!</p>
                         </h3>
                     </div>
 
                     <div class="col-xxl-3 col-xl-3 col-lg-2 col-3">
-                        <h3> <img src="img/Znak.png" alt=""> <br> <br>Разработка
+                        <h3> <img class="element-animation" src="img/nout.png" data-src="img/Znak.png" alt=""> <br> <br>Разработка
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, magni, unde!</p>
                         </h3>
                     </div>
 
                     <div class="col-xxl-3 col-xl-3 col-lg-2 col-3">
-                        <h3> <img class="kaketa" src="img/Raketa.png" alt=""> <br> <br>CEO-Оптимизация
+                        <h3> <img class="kaketa element-animation" src="img/nout.png" data-src="img/Raketa.png" alt=""> <br> <br>CEO-Оптимизация
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, magni, unde!</p>
                         </h3>
                     </div>
 
                     <div class="col-xxl-2 col-xl-2 col-lg-2 col-2">
-                        <h3> <img src="img/Gfon.png" alt=""> <br><br>Маркетинг
+                        <h3> <img class="element-animation" src="img/nout.png" data-src="img/Gfon.png" alt=""> <br><br>Маркетинг
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, magni, unde!</p>
                         </h3>
                     </div>
@@ -128,13 +148,13 @@
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/Fotka.jpg" class="d-block w-100" alt="">
+                        <img src="img/nout.png" data-src="img/Fotka.jpg" class="d-block w-100 element-animation" alt="">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/Fotka.jpg" class="d-block w-100" alt="">
+                        <img src="img/nout.png" data-src="img/Fotka.jpg" class="d-block w-100 element-animation" alt="">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/Fotka.jpg" class="d-block w-100" alt="">
+                        <img src="img/nout.png" data-src="img/Fotka.jpg" class="d-block w-100 element-animation" alt="">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -202,9 +222,9 @@
                             </select></p>
                         <hr class="col-10">
                         <div class="s44et col-10">
-                        <h4>Сроки <br> Стоимость</h4>
+                        <h5>Сроки <br> Стоимость</h5>
                            <h4>0 <br> 0</h4></div>
-                    </div> <button type="button" class="btn btn-primary btn-lg col-2 offset-5 content__matrix-4ek">Оставить заявку</button>
+                    </div> <button type="button" class="btn btn-primary btn-lg col-2 offset-5 content__matrix-4ek summa">Оставить заявку</button>
                 </div>
 
             </div>
@@ -216,13 +236,13 @@
             <h2 class="col-lg-6 offset-lg-3 offset-xl-4 col-xl-4">Немного статистики</h2>
             <div class="row1">
                 <ul class="col-12">
-                    <li> <img class="eblo" src="img/smile.png" alt=""> <br>354 <p>Счастливых клиентов</p>
+                    <li> <img class="eblo element-animation" src="img/nout.png" data-src="img/smile.png" alt=""> <br>354 <p>Счастливых клиентов</p>
                     </li>
-                    <li> <img class="str" src="img/skobki.png" alt=""> <br>34634 <p>Часов работы</p>
+                    <li> <img class="str element-animation" src="img/nout.png" data-src="img/skobki.png" alt=""> <br>34634 <p>Часов работы</p>
                     </li>
-                    <li><img src="img/Gall04ka.png" alt=""> <br>354 <p>Проектов завершено</p>
+                    <li><img class="element-animation" src="img/nout.png" data-src="img/Gall04ka.png" alt=""> <br>354 <p>Проектов завершено</p>
                     </li>
-                    <li><img class="kubok" src="img/Kubok.png" alt=""> <br>142 <p>Наград получено</p>
+                    <li><img class="kubok element-animation" src="img/nout.png" data-src="img/Kubok.png" alt=""> <br>142 <p>Наград получено</p>
                     </li>
                 </ul>
             </div>
@@ -235,7 +255,7 @@
             <h2>Отзывы <br> <img src="img/Palka.png" alt=""></h2>
 
 
-            <img class="ofis" src="img/gaz.png" alt=""> <br><br><br>
+            <img class="ofis image-link" src="img/gaz.png" href="img/gaz.png" alt=""> <br><br><br>
             <h4 class="offset-2 col-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla nostrum maxime assumenda quo, magni quae repudiandae, molestiae quisquam atque ex distinctio doloribus rerum reiciendis aspernatur, quasi est veniam, similique ratione.</h4> <br> <br>
             <h3 class="offset-4 col-4"><b>Михаил</b>,Ген директор ПАО "Газпром"</h3>
             <div class="row">
@@ -252,11 +272,10 @@
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, vel.</p>
 
-
                 <ul class="offset-2 col-8">
-                    <li class="col-md-4"><img src="img/geo.png" alt=""> <br>Москва, Пос.Киевский</li>
-                    <li class="col-md-4"><img src="img/konvert.png" alt=""> <br>b0wbowbow@mail.ru</li>
-                    <li class="col-md-4"><img src="img/truba.png" alt=""> <br>+7 999 999-99-99</li>
+                    <li class="col-md-4"><img class="element-animation" src="img/nout.png" data-src="img/geo.png" alt=""> <br>Москва, Пос.Киевский</li>
+                    <li class="col-md-4"><img class="element-animation" src="img/nout.png" data-src="img/konvert.png" alt=""> <br>b0wbowbow@mail.ru</li>
+                    <li class="col-md-4"><img class="element-animation" src="img/nout.png" data-src="img/truba.png" alt=""> <br>+7 999 999-99-99</li>
                 </ul>
                 <div class="piwi">
                     <h6>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h6>
@@ -273,15 +292,22 @@
             </div>
         </div>
     </div></section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
    
             
     <! LOADER>
         <div class="loader"></div>
         <! LOADER>
             <script src="js/jquery-3.6.0.min.js"></script>
+            <script src="js/bootstrap.bundle.min.js"></script>
+            <script src="js/jquery.magnific-popup.min.js"></script>
             <script src="js/MyScript.js"></script>
             <script src="js/testScr.js"></script>
-            <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 
