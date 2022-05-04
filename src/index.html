@@ -223,7 +223,7 @@
                     <ul class="col-12">
                         <li> <img class="eblo element-animation counter-start" src="img/nout.png" data-src="img/smile.png" alt=""><br> <h4 class="odometer" id="odometer3"></h4> <p>Счастливых клиентов</p>
                         </li>
-                        <li> <img class="str element-animation counter-start" src="img/nout.png" data-src="img/skobki.png" alt=""><br> <h4 class="odometer" id="odometer4"></h4>  <p>Часов работы</p>
+                        <li> <img class="str element-animation" src="img/nout.png" data-src="img/skobki.png" alt=""><br> <h4 class="odometer counter-start" id="odometer4"></h4>  <p>Часов работы</p>
                         </li>
                         <li><img class="element-animation counter-start" src="img/nout.png" data-src="img/Gall04ka.png" alt=""><br><h4 class="odometer" id="odometer5"></h4> <p>Проектов завершено</p>
                         </li>
@@ -240,13 +240,36 @@
             <h2>Отзывы <br> <img src="img/Palka.png" alt=""></h2>
 
 
-            <img class="ofis image-link" src="img/gaz.png" href="img/gaz.png" alt=""> <br><br><br>
-            <h4 class="offset-2 col-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla nostrum maxime assumenda quo, magni quae repudiandae, molestiae quisquam atque ex distinctio doloribus rerum reiciendis aspernatur, quasi est veniam, similique ratione.</h4> <br> <br>
+            <img class="ofis image-link" src="img/gaz.png" href="img/gaz.png" alt="">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <h4 class="offset-2 col-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla nostrum maxime assumenda quo, magni quae repudiandae, molestiae quisquam atque ex distinctio doloribus rerum reiciendis aspernatur, quasi est veniam, similique ratione.</h4>
+    </div>
+    <div class="carousel-item">
+      <h4 class="offset-2 col-8">Nulla nostrum maxime assumenda quo, magni quae repudiandaesimilique ratione.</h4>
+    </div>
+    <div class="carousel-item">
+      <h4 class="offset-2 col-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+</div>
+            
             <h3 class="offset-4 col-4"><b>Михаил</b>,Ген директор ПАО "Газпром"</h3>
-            <div class="row">
-
-
-            </div>
+            
         </div>
     </div>
     <section class="section" id="Pismo">
@@ -287,6 +310,24 @@
 
 
 
+<!-- Модальное Окно  -->
+<div id="overlay">
+    <div class="popup">
+        <h2>Постой, не уходи!</h2>
+        <p>
+          Хотя, можешь и уходить..)
+         </p>
+         <div class="pl-left">
+               <img src="https://placeimg.com/320/320/tech">
+         </div>
+         <p>Но я бы не уходил на твоем месте</p>
+         <div class="pl-right">
+               <img src="https://placeimg.com/320/320/nature">
+         </div>              
+<p>Поэтому, можешь и уходить) </p>
+        <button class="close" title="Закрыть" onclick="document.getElementById('overlay').style.display='none';"></button>
+    </div>
+</div>
     <! LOADER>
         <div class="loader"></div>
         <! LOADER>
@@ -296,6 +337,7 @@
             <script src="js/MyScript.js"></script>
             <script src="js/testScr.js"></script>
             <script src="https://github.hubspot.com/odometer/odometer.js"></script>
+            
 </body>
 
 
