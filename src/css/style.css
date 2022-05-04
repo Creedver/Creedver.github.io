@@ -359,9 +359,12 @@ img.eblo {
     color: #1a2e43;
 }
 
-.main4 h4{
-    margin-top: 20px;
+.main4 p{
+    display: flex;
+    justify-content: center;
+    margin-top: 13px;
     font-weight: bold;
+    font-size: 20px;
 }
 .s44et{
     color: #102032;
@@ -384,6 +387,10 @@ img.eblo {
     justify-content: center;
     font-family: 'Franlin Gothic', sans-serif;
     font-weight: bold;
+}
+.main5 h4{
+    font-weight: bold;
+    font-size: 45px;
 }
 
 .row1{
@@ -439,7 +446,7 @@ img.eblo {
     color: white;
     font-size: 17px;
     text-align: center;
-    background: url(../img/Palka.png)50% 20%/4% auto no-repeat, url(../img/lastfn.jpg) no-repeat;
+    background: url(../img/Palka.png)50% 20%/4% auto no-repeat, url(../img/lastfn.jpg)no-repeat;
 }
 .main7 h2{
     text-transform: uppercase;
@@ -493,6 +500,7 @@ img.eblo {
     color: white;
     background: none;
     margin-top: 4px;
+    margin-bottom: 10px;
     height: 40px;
     width: 120px;
     border-radius: 5px;
@@ -520,7 +528,7 @@ img.eblo {
 @media (min-width: 400px) and (max-width: 1200px){
     
     .main1{
-        height: 400px;
+        height: 550px;
     }
     
     .mainB{

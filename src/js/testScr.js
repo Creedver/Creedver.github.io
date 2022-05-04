@@ -16,6 +16,11 @@ $(document).ready(function() {
     });
 });
     
+    $('.ska').click(function(){
+        $("p").show(2000);
+        
+    });
+    
   let options = {threshold: [0.5]};
     let observer = new IntersectionObserver (onEntry,options);
     let elements = $('.element-animation');
@@ -42,3 +47,25 @@ $('a[href^="#"]').click(function () {
     $('html, body').animate({scrollTop: $(valHref).offset().top - 50 + "px"});
 });
 
+var isInViewport = function (elem) {
+            var distance = elem.getBoundingClientRect();
+            return (
+                distance.top >= 0 &&
+                distance.left >= 0 &&
+                distance.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                distance.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        };
+        
+        var findMe = document.querySelector('.counter-start');
+
+        window.addEventListener('scroll', function (event) {
+            if (isInViewport(findMe)) {
+                setTimeout(function () {
+                    odometer3.innerHTML = 2409;
+                    odometer4.innerHTML = 228;
+                    odometer5.innerHTML = 1488;
+                    odometer6.innerHTML = 42;
+                }, 100);
+            }
+        }, false);
