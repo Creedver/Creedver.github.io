@@ -5,7 +5,7 @@ $mail = new PHPMailer;
 $mail->CharSet = 'utf-8';
 
 $email = $_POST['user_email'];
-$password = $_POST['user_phone'];
+$phone = $_POST['user_phone'];
 $radio = $_POST['radios'];
 $check = $_POST['check'];
 
@@ -20,7 +20,7 @@ $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, 
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
 $mail->setFrom('creedver96@mail.ru'); // от кого будет уходить письмо?
-$mail->addAddress('b0wbowbow@mail.ru');     // Кому будет уходить письмо 
+$mail->addAddress('beharic473@eoscast.com');     // Кому будет уходить письмо 
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
@@ -30,7 +30,7 @@ $mail->addAddress('b0wbowbow@mail.ru');     // Кому будет уходит�
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Тема письма';
-$mail->Body    = '' .$email . "Скрипт сработал! <br>" . $phone . " <br>" . $radio . " <br>" . $check;
+$mail->Body    = '' . "Скрипт сработал! <br>" . $email . "<br>" . $phone . " <br>" . $radio . " <br>" . $check;
 $mail->AltBody = '';
 
 if(!$mail->send()) {

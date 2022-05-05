@@ -6,6 +6,9 @@ function calc(){
             odometer1.innerHTML = sum;
             odometer2.innerHTML = srok;
         }, 100);
+    
+$('#l2').val();
+    if val() = Opt1 =>
 
 
             let sum = 0;
