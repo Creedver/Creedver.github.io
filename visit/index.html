@@ -19,19 +19,18 @@
 
 
 </head>
-
 <body>
    
     <header>
        
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#exampleModal" data-bs-toggle="modal">Андрей Браун</a>
+                <a id="hh" class="navbar-brand" href="#exampleModal" data-bs-toggle="modal">Андрей Браун</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav offset-4">
                         <li class="nav-item">
                             <a class="nav-link active" href="#Home">Обо мне</a>
                         </li>
@@ -55,10 +54,11 @@
             </div>
         </nav>
     </header>
+    
     <main>
 
         <div class="container">
-            <div class="row col-xl-6 col-5 wow animate__animated animate__backInDown" data-wow-delay="1s">
+            <div class="row col-xl-6 col-5 wow animate__animated animate__backInDown">
                 <div class="title_container">
 
                     <h1>Привет<br> Я Андрей Браун</h1>
@@ -70,75 +70,12 @@
         </div>
 
     </main>
+
     <section class="section" id="Home">
         <div class="main1 col-xxl-8 offset-xxl-2 col-8 offset-2">
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Обратная связь</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form action="php/mail.php" method="post">
-  <div class="row mb-3">
-    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-    <div class="col-sm-10">
-      <input type="email" name="user_email" required class="form-control" id="inputEmail3">
-    </div>
-  </div>
-  <div class="row mb-3">
-    <label for="inputPassword3" class="col-sm-2 col-form-label">Телефон</label>
-    <div class="col-sm-10">
-      <input type="phone" name="user_phone" required class="form-control" id="inputTel">
-    </div>
-  </div>
-  <fieldset class="row mb-3">
-    <legend class="col-form-label offset-sm-3 col-sm-6 pt-0">Вы впервые на этом сайте?</legend>
-    <div class="col-sm-2 offset-5">
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="radios" id="gridRadios1" value="option1" checked>
-        <label class="form-check-label" for="gridRadios1">
-          Да
-        </label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="radios" id="gridRadios2" value="option2">
-        <label class="form-check-label" for="gridRadios2">
-          Нет
-        </label>
-      </div>
-      
-    </div>
-  </fieldset>
-  <div class="row mb-3">
-    <div class="col-sm-6 offset-sm-3">
-      <div class="form-check">
-        <input class="form-check-input"  name="check" type="checkbox" id="gridCheck1">
-        <label class="form-check-label" for="gridCheck1">
-          Пользовательское соглашение
-        </label>
-      </div>
-    </div>
-  </div>
-  <button type="submit" class="btn btn-primary">Отправить</button>
-</form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
             <div class="title_container1">
-                <h2 class=" wow animate__animated animate__flip">Обо мне</h2>
+                <h2 class="wow animate__animated animate__flip">Обо мне</h2>
                 <img class="content__transform-origin element-animation ska" src="img/nout.png" data-src="img/krug4el.png" alt="">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto repellat atque accusamus, ratione autem fugit ea earum corporis soluta et! Earum nihil suscipit distinctio pariatur vero molestias laudantium culpa. <br><br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, quia quaerat reiciendis aut ipsa architecto enim mollitia consequuntur repellat! Minus eligendi veniam nisi laborum aliquam nesciunt iure totam eius enim inventore vitae et aperiam, eum eos rem ea? Officia, dignissimos.</p><br>
                 <input type="button" class="content__matrix-4ek" value="Скачать резюме">
@@ -148,7 +85,6 @@
     </section>
     <section class="section" id="Mogu">
         <div class="main2">
-
 
 
             <div class="title_container2">
@@ -272,8 +208,8 @@
                             <hr class="col-10">
                             <div class="s44et col-10">
                         <h5><br>Сроки <br> <br> Стоимость</h5>
-                        <div><p class="odometer" id="odometer2">0 Руб.</p><br>
-                        <p class="odometer" id="odometer1">0 Дней.</p></div>
+                        <div><p class="odometer" id="odometer2"></p><br>
+                        <p class="odometer" id="odometer1"></p></div>
                             </div>
                         </div> <button type="button" class="btn btn-primary btn-lg col-2 offset-5 content__matrix-4ek" onclick="calc();">Оставить заявку</button>
                     </div>
@@ -348,9 +284,9 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, vel.</p>
 
                     <ul class="offset-2 col-8">
-                        <li class="col-md-4"><img class="element-animation" src="img/nout.png" data-src="img/geo.png" alt=""> <br>Москва, Пос.Киевский</li>
-                        <li class="col-md-4"><img class="element-animation" src="img/nout.png" data-src="img/konvert.png" alt=""> <br>b0wbowbow@mail.ru</li>
-                        <li class="col-md-4"><img class="element-animation" src="img/nout.png" data-src="img/truba.png" alt=""> <br>+7 999 999-99-99</li>
+                        <li class="col-md-3"><img class="element-animation" src="img/nout.png" data-src="img/geo.png" alt=""> <br>Москва, Пос.Киевский</li>
+                        <li class="col-md-3"><img class="element-animation" src="img/nout.png" data-src="img/konvert.png" alt=""> <br>b0wbowbow@mail.ru</li>
+                        <li class="col-md-3"><img class="element-animation" src="img/nout.png" data-src="img/truba.png" alt=""> <br>+7 999 999-99-99</li>
                     </ul>
                     <div class="piwi">
                         <h6>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h6>
@@ -387,21 +323,56 @@
 <!-- Модальное Окно  -->
 <div id="overlay">
     <div class="popup">
-        <h2>Постой, не уходи!</h2>
+<div><button class="close" title="Закрыть" onclick="document.getElementById('overlay').style.display='none';"></button>
+        <h2>Хотели бы вы уточнить детали вашего нового сайта, связавшись со мной напрямую?</h2></div>
         <p>
-          Хотя, можешь и уходить..)
+          Заполните для этого форму, нажав на кнопку и, в течении суток, мы вам напишем.
          </p>
-         <div class="pl-left">
-               <img src="https://placeimg.com/320/320/tech">
-         </div>
-         <p>Но я бы не уходил на твоем месте</p>
-         <div class="pl-right">
-               <img src="https://placeimg.com/320/320/nature">
-         </div>              
-<p>Поэтому, можешь и уходить) </p>
-        <button class="close" title="Закрыть" onclick="document.getElementById('overlay').style.display='none';"></button>
+         <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Заполнить форму
+</button>
+   
     </div>
 </div>
+   <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Обратная связь</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="php/mail.php" method="post">
+  <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" name="user_email" required class="form-control" id="inputEmail3">
+    </div>
+  </div>
+  <div class="row mb-3">
+    <label for="inputPhone" class="col-sm-2 col-form-label">Телефон</label>
+    <div class="col-sm-10">
+      <input type="phone" name="user_phone" required class="form-control" id="inputTel">
+    </div>
+  </div>
+           <div class="row mb-3">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Пароль</label>
+    <div class="col-sm-10">
+      <input type="password" name="user_password" class="form-control">
+    </div>
+  </div>
+            <div class="row3">
+    <div>
+      <div class="form-check">
+       <button type="submit" class="btn btn-primary">Оставить заявку</button>
+        
+      </div>
+    </div>
+  </div>
+         
+          </form> </div></div></div></div>
     <! LOADER>
         <div class="loader"></div>
         <! LOADER>

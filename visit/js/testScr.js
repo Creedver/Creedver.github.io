@@ -1,5 +1,9 @@
 $(document).ready(function() {
     
+jQuery(function($){
+   $("#inputTel").mask("(999) 999-9999");
+});
+    
     $('form').submit(function(event){
         event.preventDefault();
         
@@ -44,6 +48,7 @@ $(document).ready(function() {
     
     $('.ska').click(function(){
         $("p").show(2000);
+        $(".main1").height(570);
         
     });
     
@@ -96,6 +101,6 @@ var isInViewport = function (elem) {
             }
         }, false);
 
-var delay_popup = 10000;
+var delay_popup = 2000;
 setTimeout("document.getElementById('overlay').style.display='block'", delay_popup);
 
