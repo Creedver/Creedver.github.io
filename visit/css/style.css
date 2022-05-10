@@ -62,10 +62,26 @@ body{
 @keyframes loader {
     100% {
         transform: rotate(360deg);
+        display: none;
     }
 }
 
+.hide{
+    opacity: 0;
+}
 
+.lmask{
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 999999999;
+    transition: 0.6s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 main{
     height: 1000px;
@@ -73,12 +89,57 @@ main{
     text-align: center;
 }
 
+#hh{
+    margin-left: 40px;
+    font-size: 20px;
+    animation-duration: 3.3s;
+}
+
 nav{
     font-weight: bold;
 }
 
-main h1{
-    color: #223549;
+nav li{
+    -webkit-animation: topshift 0.4s ease forwards;
+    -o-animation: topshift 0.4s ease forwards;
+    animation: topshift 0.4s ease forwards;
+    opacity: 0;
+    transition: all 0.1;
+}
+
+@keyframes topshift {
+    from {
+        opacity: 0;
+        margin-top: -80px;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+nav li:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+nav li:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+nav li:nth-child(3) {
+    animation-delay: 1.0s;
+}
+
+nav li:nth-child(4) {
+    animation-delay: 1.4s;
+}
+
+nav li:nth-child(5) {
+    animation-delay: 1.8s;
+}
+
+nav li:nth-child(6) {
+    animation-delay: 2.2s;
 }
 
 main h4{
@@ -170,14 +231,15 @@ main h4{
     font-family: 'Calibri', sans-serif;
 }
 
+
 .title_container3{
-    background: url(../img/Palka.png) 50% 44%/ 4% auto no-repeat;
+    background: url(../img/Palka.png) 50% 60%/ 5% auto no-repeat;
     text-align: center;
     font-family: 'Franlin Gothic', sans-serif;
 }
 
 .title_container3 h2{
-    padding: 20px 0px 60px 0px;
+    padding: 20px 0px 40px 0px;
     text-transform: uppercase;
     font-size: 35px;
     font-weight: bold;
@@ -185,32 +247,34 @@ main h4{
 }
 
 .title_container3 p{
+    padding-top: 10px;
     text-align: center;
     font-size: 17px;
     font-weight: bold;
     color: #38475a;
+    float: left;
 }
+
+
 .main3 h3{
-    padding-top: 40px;
+    float: left;
+    padding: 10px 0px 5px 0px;
     font-size: 20px;
     font-weight: bold;
     color: #2f4154;
+    line-height: 10px;
 }
 
 .main3 p{
     font-family: 'Calibri', sans-serif;
 }
 .main3 h3 p{
-    margin-top: 1px;
+    padding-top: 5px;
+    margin: 2px 0px 3px 0px;
     color: #38475a;
     font-weight: 600;
     font-size: 17px;
     line-height: 23px;
-}
-
-.btn-lg{
-    width: 192px;
-    margin-bottom: 50px;
 }
 
 .title_container4{
@@ -254,7 +318,7 @@ img.eblo {
     color: #1a2e43;
     font-weight: bold;
     text-align: center;
-    padding: 40px 0px 60px 0px;
+    padding: 40px 0px 30px 0px;
 }
 
 .opt2{
@@ -267,6 +331,14 @@ img.eblo {
     background-color:gainsboro;
 }
 
+.s4{
+    padding-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: gray;
+    font-size: 15px;
+}
+
 .main4 h3{
     font-weight: bold;
     color: #1a2e43;
@@ -275,7 +347,7 @@ img.eblo {
 .main4 p{
     display: flex;
     justify-content: center;
-    margin-top: 13px;
+    margin-top: 12px;
     font-weight: bold;
     font-size: 20px;
 }
@@ -310,6 +382,16 @@ img.eblo {
     display: flex;
     justify-content: space-between;
     font-size: 20px;
+}
+
+.row2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row ul{
+    display: flex;
+    justify-content: center;
 }
 
 .row1 ul{
@@ -377,7 +459,6 @@ img.eblo {
     font-family: 'Calibri', sans-serif;
 }
 
-
 .main7 h6{
     padding-top: 10px;
     font-size: 20px;
@@ -423,14 +504,17 @@ img.eblo {
 
 @media (min-width: 400px) and (max-width: 1000px){
     
-    .container h4{
-        display: none
+    .title_container{
+        position: relative;
+        border-bottom: 200px;
+        right: 100px;
     }
     .container h1{
         margin-top: 280px;
     }
-    .container{
-        float: left;
+    
+    main1 p{
+        display: none;
     }
     
     .main1{
@@ -512,11 +596,6 @@ img.eblo {
     color: white;
 }
 
-.ska{
-    padding: 0px;
-    margin: 0px;
-}
-
 .str{
 /* Подключаем свойство transform-style для 3D */
 transform-style: preserve-3d;
@@ -592,7 +671,6 @@ data-src{
     animation: fade .6s;
 }
 
-
 .navbar-nav{
     text-transform: uppercase;
     font-weight: bold;
@@ -602,23 +680,12 @@ data-src{
     margin-right: 23px;
 }
 
-#hh{
-    margin-left: 20px;
-    font-size: 20px;
-}
-
-#navbarNav{
-    text-align: right;
-}
-
-#overlay{
-    text-align: center;
-}
 
 .row3{
     display: flex;
     justify-content: center;
 }
+
 
 .close {
     top: 10px;
@@ -656,3 +723,19 @@ data-src{
 .close:hover {
     background-color: rgba(252, 20, 0, 0.8);
 }
+
+.mapBox{
+    height: 80px;
+    width: 170px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content:space-around;
+    font-size: 10px;
+    font-weight: bold;
+    position: relative;
+    bottom: 330px;
+    left: 60px;
+    background-color: #fff;
+}
+
+

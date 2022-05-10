@@ -61,7 +61,7 @@ jQuery(function($){
     $(document).ready(function() {
   $('.image-link').magnificPopup({type:'image'});
 });
-});
+
 
 
 function onEntry(entry) {
@@ -101,6 +101,16 @@ var isInViewport = function (elem) {
             }
         }, false);
 
-var delay_popup = 2000;
+var delay_popup = 20000;
 setTimeout("document.getElementById('overlay').style.display='block'", delay_popup);
 
+let lmask = document.querySelector('.lmask');
+
+window.addEventListener('load', () => {
+    lmask.classList.add('hide');
+    setTimeout(() => {
+        lmask.remove();
+    }, 600);
+});
+
+});

@@ -20,12 +20,15 @@
 
 </head>
 <body>
+  <div class="lmask">
+        <div class="loader"></div>
+        </div>
    
     <header>
        
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
             <div class="container-fluid">
-                <a id="hh" class="navbar-brand" href="#exampleModal" data-bs-toggle="modal">Андрей Браун</a>
+                <a id="hh" class="navbar-brand animate__animated animate__flip" href="#exampleModal" data-bs-toggle="modal">Андрей Браун</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -105,7 +108,7 @@
                         </div>
 
                         <div class="col-xxl-3 col-xl-3 col-lg-2 col-3">
-                            <h3> <img class="kaketa element-animation" src="img/nout.png" data-src="img/Raketa.png" alt=""> <br> <br>CEO-Оптимизация
+                            <h3> <img class="element-animation" src="img/nout.png" data-src="img/Raketa.png" alt=""> <br> <br>CEO-Оптимизация
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, magni, unde!</p>
                             </h3>
                         </div>
@@ -126,7 +129,7 @@
 
                 <h2>Кейсы</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, corrupti.</p>
+                <p class="offset-2 col-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, corrupti.</p>
             </div>
             <div class="container">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
@@ -154,15 +157,14 @@
 
                 <div class="row">
                     <ul>
-                        <li class="col-xxl-2">
+                        <li class="col-3">
                             <h3>CLIENT:<p>Какая-то компания</p>
-
                                 WEBSITE:<p>http://somedomain.com</p>
-                                <div class="site"><a href=""><button type="button" class="btn btn-primary btn-lg content__matrix-4ek">Перейти на сайт</button></a></div>
-                            </h3>
+                                <button type="button" class="btn btn-primary btn-lg content__matrix-4ek">Перейти на сайт</button></h3>
+                            
                         </li>
-                        <li class="offset-xxl-1 col-xxl-9">
-                            <h3>Название проекта<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo dicta quidem nostrum nihil, ipsam enim tenetur accusamus at quod, fuga voluptate sapiente amet consectetur molestiae assumenda, blanditiis, ratione adipisci! Maxime!</p>
+                        <li class="offset-0 col-9 offset-md-1 col-md-8">
+                            <h3>Название проекта:<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo dicta quidem nostrum nihil, ipsam enim tenetur accusamus at quod, fuga voluptate sapiente amet consectetur molestiae assumenda, blanditiis, ratione adipisci! Maxime!</p>
                             </h3>
                         </li>
                     </ul>
@@ -176,34 +178,35 @@
 
 
             <div class="container">
-                <div class="row col-12">
-                    <div class="title_container4">
+                <div class="row">
+                    <div class="title_container4  col-12 col-md-12">
                         <h2>Расчет стоимости</h2>
-
+                        <h5 class="s4">Выберите нужные вам пункты в бланке для того, что бы увидеть примерную цену.</h5>
+                       
                         <div class="offset-2">
                             <h3>ТИП САЙТА</h3>
 
-                            <select name="list2" class="opt2 col-10" id="l2">
-                                <option value="Opt1">Выберите пункт...</option>
-                                <option value="Opt2">Выберите пункт2...</option>
-                                <option value="Opt3">Выберите пункт3...</option>
+                            <select name="list1" class="opt2 col-10" id="l1">
+                                <option value="10000">Сайт-визитка</option>
+                                <option value="20000">Корпоративный</option>
+                                <option value="30000">Магазин</option>
 
                             </select>
 
                             <h3>ДИЗАЙН</h3>
 
-                            <select name="list2" class="opt2 col-10" id="l3">
-                                    <option value="Opt3">Выберите пункт...</option>
-                                    <option value="Opt3">Выберите пункт2...</option>
-                                    <option value="Opt3">Выберите пункт3...</option>
+                            <select name="list2" class="opt2 col-10" id="l2">
+                                    <option value="10000">Информационный</option>
+                                    <option value="20000">Анимированный</option>
+                                    <option value="30000">Уникальный</option>
                                 </select>
 
                             <h3>АДАПТИВНОСТЬ</h3>
 
-                            <select name="list2" class="opt2 col-10" id="l4">
-                                    <option value="Opt4">Выберите пункт...</option>
-                                    <option value="Opt4">Выберите пункт2...</option>
-                                    <option value="Opt4">Выберите пункт3...</option>
+                            <select name="list3" class="opt2 col-10" id="l3">
+                                    <option value="10000">Адаптивная вёрстка</option>
+                                    <option value="20000">Резиновая вёрстка</option>
+                                    <option value="30000">Фиксированная вёрстка</option>
                                 </select>
                             <hr class="col-10">
                             <div class="s44et col-10">
@@ -211,7 +214,7 @@
                         <div><p class="odometer" id="odometer2"></p><br>
                         <p class="odometer" id="odometer1"></p></div>
                             </div>
-                        </div> <button type="button" class="btn btn-primary btn-lg col-2 offset-5 content__matrix-4ek" onclick="calc();">Оставить заявку</button>
+                        </div> <button type="button" class="btn btn-primary btn-lg col-2 offset-5 content__matrix-4ek" onclick="calc1();">Подсчет стоимости</button>
                     </div>
 
                 </div>
@@ -230,7 +233,7 @@
                         </li>
                         <li><img class="element-animation counter-start" src="img/nout.png" data-src="img/Gall04ka.png" alt=""><br><h4 class="odometer" id="odometer5"></h4> <p>Проектов завершено</p>
                         </li>
-                        <li><img class="kubok element-animation counter-start" src="img/nout.png" data-src="img/Kubok.png" alt=""><br> <h4 class="odometer" id="odometer6"></h4>  <p>Наград получено</p>
+                        <li><img class="element-animation counter-start" src="img/nout.png" data-src="img/Kubok.png" alt=""><br> <h4 class="odometer" id="odometer6"></h4>  <p>Наград получено</p>
                         </li>
                     </ul>
                 </div>
@@ -284,9 +287,9 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, vel.</p>
 
                     <ul class="offset-2 col-8">
-                        <li class="col-md-3"><img class="element-animation" src="img/nout.png" data-src="img/geo.png" alt=""> <br>Москва, Пос.Киевский</li>
-                        <li class="col-md-3"><img class="element-animation" src="img/nout.png" data-src="img/konvert.png" alt=""> <br>b0wbowbow@mail.ru</li>
-                        <li class="col-md-3"><img class="element-animation" src="img/nout.png" data-src="img/truba.png" alt=""> <br>+7 999 999-99-99</li>
+                        <li class="col-md-4"><img class="element-animation" src="img/nout.png" data-src="img/geo.png" alt=""> <br>Москва, Пос.Киевский</li>
+                        <li class="col-md-4"><img class="element-animation" src="img/nout.png" data-src="img/konvert.png" alt=""> <br>b0wbowbow@mail.ru</li>
+                        <li class="col-md-4"><img class="element-animation" src="img/nout.png" data-src="img/truba.png" alt=""> <br>+7 999 999-99-99</li>
                     </ul>
                     <div class="piwi">
                         <h6>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h6>
@@ -305,22 +308,17 @@
         </div>
     </section>
     
-    <div class="row"><div class="col-6"><h4>Контакты</h4>
-    <p>Поселок Киевский д.16</p>
-    <p>+7 999 999 99 99</p></div><div class="col-6"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab6f89271a4be39bf462642b5f424fd4eddecd02a7bf19dabe12c36604371993d&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script></div></div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab6f89271a4be39bf462642b5f424fd4eddecd02a7bf19dabe12c36604371993d&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=false"></script>
+    <div class="mapBox">
+    <h5>Город Москва<br>Пос.Киевский<br>Дом 16, 2 подъезд</h5></div>
+    
     
     
     
 
 
-
-<!-- Модальное Окно  -->
+ <!-- Модальное Окно  -->
+ 
 <div id="overlay">
     <div class="popup">
 <div><button class="close" title="Закрыть" onclick="document.getElementById('overlay').style.display='none';"></button>
@@ -373,9 +371,8 @@
   </div>
          
           </form> </div></div></div></div>
-    <! LOADER>
-        <div class="loader"></div>
-        <! LOADER>
+    
+           
             <script src="js/jquery-3.6.0.min.js"></script>
             <script src="js/bootstrap.bundle.min.js"></script>
             <script src="js/jquery.magnific-popup.min.js"></script>
